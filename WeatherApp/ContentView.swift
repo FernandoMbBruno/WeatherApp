@@ -16,7 +16,7 @@ struct ContentView: View {
         VStack {
             if let location = locationManager.location {
                 if let weather = weather {
-                    HomeView()
+                    HomeView(weatherData: weather)
                 } else {
                     LoadingView()
                         .task {
@@ -31,7 +31,7 @@ struct ContentView: View {
                 if locationManager.isLoading {
                     LoadingView()
                 } else {
-                    HomeView()
+                    
                 }
             }
        

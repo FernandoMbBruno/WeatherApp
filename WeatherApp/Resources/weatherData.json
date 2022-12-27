@@ -1,0 +1,42 @@
+{
+   "coord":{
+      "lon":-46.6551,
+      "lat":-23.5796
+   },
+   "weather":[
+      {
+         "id":800,
+         "main":"Clear",
+         "description":"clear sky",
+         "icon":"01n"
+      }
+   ],
+   "base":"stations",
+   "main":{
+      "temp":293.79,
+      "feels_like":294.16,
+      "temp_min":292.09,
+      "temp_max":294.36,
+      "pressure":989,
+      "humidity":86
+   },
+   "wind":{
+      "speed":2.06,
+      "deg":30
+   },
+   "clouds":{
+      "all":0
+   },
+   "dt":1672042259,
+   "sys":{
+      "type":1,
+      "id":8446,
+      "country":"BR",
+      "sunrise":1672042774,
+      "sunset":1672091674
+   },
+   "timezone":-10800,
+   "id":7521912,
+   "name":"Consolação",
+   "cod":200
+}

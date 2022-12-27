@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct HomeView: View {
+    var weatherData: Weather
     var body: some View {
         ZStack {
             Theme.backgroundLight
@@ -125,6 +126,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(weatherData: modelWeatherMock)
     }
 }
