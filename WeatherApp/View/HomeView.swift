@@ -9,7 +9,6 @@ import SwiftUI
 
 
 struct HomeView: View {
-    @StateObject var locationManager = LocationManager()
     var body: some View {
         ZStack {
             Theme.backgroundLight
@@ -36,10 +35,11 @@ struct HomeView: View {
                         .frame(width: 60, height: 60)
                         .foregroundColor(Theme.labelDark)
                     
-                    Text("26°")
+                    Text("10°")	
                         .font(.system(size: 62))
                         .bold()
                         .foregroundColor(Theme.labelDark)
+                        .padding(.leading,15)
                     
                     Text("Mostly cloudy")
                         .bold()

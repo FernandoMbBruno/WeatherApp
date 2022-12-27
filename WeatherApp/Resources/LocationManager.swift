@@ -12,6 +12,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
     @Published var location: CLLocationCoordinate2D?
+    @Published var isLoading = false
     
     override init() {
         super.init()
@@ -21,16 +22,17 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func requestLocation() {
+        isLoading = true
         manager.requestLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            if let location = locations.first {
-                print("Location data received.")
-                print(location)
-            }
-        }
-        func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-            print("Failed to get users location.")
-        }
+        location = locations.first?.coordinate
+        isLoading = false
+        print("Sucess")
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Failed to get users location.")
+        isLoading = false
+    }
 }
