@@ -1,42 +1,43 @@
 {
    "coord":{
-      "lon":-46.6551,
-      "lat":-23.5796
+      "lon":-77.0171,
+      "lat":38.9041
    },
    "weather":[
       {
-         "id":800,
-         "main":"Clear",
-         "description":"clear sky",
-         "icon":"01n"
+         "id":804,
+         "main":"Clouds",
+         "description":"overcast clouds",
+         "icon":"04n"
       }
    ],
    "base":"stations",
    "main":{
-      "temp":293.79,
-      "feels_like":294.16,
-      "temp_min":292.09,
-      "temp_max":294.36,
-      "pressure":989,
-      "humidity":86
+      "temp":-1.31,
+      "feels_like":-1.31,
+      "temp_min":-2.76,
+      "temp_max":-0.15,
+      "pressure":1024,
+      "humidity":62
    },
    "wind":{
-      "speed":2.06,
-      "deg":30
+      "speed":0.45,
+      "deg":187,
+      "gust":0.89
    },
    "clouds":{
-      "all":0
+      "all":100
    },
-   "dt":1672042259,
+   "dt":1672113553,
    "sys":{
-      "type":1,
-      "id":8446,
-      "country":"BR",
-      "sunrise":1672042774,
-      "sunset":1672091674
+      "type":2,
+      "id":2034471,
+      "country":"US",
+      "sunrise":1672057513,
+      "sunset":1672091514
    },
-   "timezone":-10800,
-   "id":7521912,
-   "name":"Consolação",
+   "timezone":-18000,
+   "id":4138106,
+   "name":"District of Columbia",
    "cod":200
 }

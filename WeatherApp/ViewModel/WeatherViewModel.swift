@@ -11,7 +11,7 @@ import CoreLocation
 class WeatherViewModel: ObservableObject {
     
     func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> Weather {
-        guard let url = URL(string:"https://api.openweathermap.org/data/2.5/weather?appid=4896240256ac437c5665495d9a5a212a&lat=\(latitude)&lon=\(longitude)" ) else {
+        guard let url = URL(string:"https://api.openweathermap.org/data/2.5/weather?appid=4896240256ac437c5665495d9a5a212a&lat=\(latitude)&lon=\(longitude)&units=metric" ) else {
             fatalError()
         }
         
