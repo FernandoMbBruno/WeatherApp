@@ -10,13 +10,15 @@ import SwiftUI
 
 struct HomeView: View {
     var weatherData: Weather
+    var weatherModel = WeatherViewModel()
+    
     var body: some View {
         ZStack {
             Theme.backgroundLight
                 .ignoresSafeArea()
             VStack {
                 VStack {
-                    Text("Consolacao")
+                    Text(weatherData.name)
                         .font(.body)
                         .bold()
                         .foregroundColor(Theme.labelDark)
@@ -30,19 +32,17 @@ struct HomeView: View {
     
                 Spacer()
                 
-                VStack(spacing: 25) {
-                    Image(systemName: "cloud.rain")
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .foregroundColor(Theme.labelDark)
+                VStack(spacing: 10) {
+                    WeatherIconsView(weatherModel: weatherData)
                     
-                    Text("10°")	
+                    Text(weatherModel.formatTemp(data: weatherData.main.temp) + "°C")
                         .font(.system(size: 62))
+                        .multilineTextAlignment(.center)
                         .bold()
                         .foregroundColor(Theme.labelDark)
-                        .padding(.leading,15)
+                        .frame(maxWidth: .infinity, alignment: .center)
                     
-                    Text("Mostly cloudy")
+                    Text(weatherData.weather[0].description)
                         .bold()
                         .foregroundColor(Theme.labelDark)
 
@@ -60,7 +60,7 @@ struct HomeView: View {
                             .frame(width: 25, height: 20)
                             .foregroundColor(Theme.labelDark)
                         
-                        Text("4m/s")
+                        Text(weatherModel.doubleToString(double: weatherData.wind.speed) + "m/s")
                             .font(.system(size: 15))
                             .bold()
                             .foregroundColor(Theme.labelDark)
@@ -84,36 +84,33 @@ struct HomeView: View {
                     .padding(.horizontal, 50)
                    
                     HStack {
-                        Text("Tue, Apr 14")
+                        Text("Wed, Apr 14")
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Image(systemName: "wind")
                             .resizable()
                             .frame(width: 25, height: 20)
-                            .frame(maxWidth: .infinity, alignment: .center)
                         Text("16°, 2°")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                     }
                     .padding(.horizontal, 50)
                     
                     HStack {
-                        Text("Tue, Apr 14")
+                        Text("Thu, Apr 14")
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Image(systemName: "wind")
                             .resizable()
                             .frame(width: 25, height: 20)
-                            .frame(maxWidth: .infinity, alignment: .center)
                         Text("23°, 8°")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                     }
                     .padding(.horizontal, 50)
                     
                     HStack {
-                        Text("Tue, Apr 14")
+                        Text("Fri, Apr 14")
                             .frame(maxWidth: .infinity, alignment: .leading)
                         Image(systemName: "wind")
                             .resizable()
                             .frame(width: 25, height: 20)
-                            .frame(maxWidth: .infinity, alignment: .center)
                         Text("26°, 8°")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                     }

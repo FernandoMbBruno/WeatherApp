@@ -15,4 +15,15 @@ struct Theme {
     static let labelLight = Color("Label_Light")
 }
 
+struct Icons {
+    static let clearSky = Image(systemName: "sun.max")
+    static let fewClouds = Image(systemName: "cloud.sun")
+    static let clouds = Image(systemName: "cloud")
+    static let brokenClouds = Image(systemName: "cloud")
+    static let rain = Image(systemName: "cloud.rain")
+    static let thunderStorm = Image(systemName: "cloud.bolt.rain")
+    static let snow = Image(systemName: "cloud.snow")
+    static let mist = Image(systemName: "cloud.fog")
+}
+
 

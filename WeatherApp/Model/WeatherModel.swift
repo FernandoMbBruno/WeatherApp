@@ -15,7 +15,6 @@ struct Weather: Codable {
     var wind: WindModel
     var clouds: CloudsModel
     var dt: Double
-    var sys: SysModel
     var timezone: Double
     var id: Int
     var name: String

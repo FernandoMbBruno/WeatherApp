@@ -23,6 +23,17 @@ class WeatherViewModel: ObservableObject {
         let decodedData = try JSONDecoder().decode(Weather.self, from: data)
         
         return decodedData
-    } 
+    }
+    
+    func doubleToString(double: Double) -> String {
+        return String(double)
+    }
+    
+    func formatTemp(data: Double) -> String {
+        let data = data
+        let dataFormated = String(format: "%.0f", data)
+        
+        return dataFormated
+    }
 }
 

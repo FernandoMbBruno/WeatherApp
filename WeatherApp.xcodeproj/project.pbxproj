@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C569D7DC295E915B00AC104E /* WeatherIconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D7DB295E915B00AC104E /* WeatherIconsView.swift */; };
 		C5A221C629596DB700E1344E /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A221C529596DB700E1344E /* WeatherAppApp.swift */; };
 		C5A221C829596DB700E1344E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A221C729596DB700E1344E /* ContentView.swift */; };
 		C5A221CA29596DB900E1344E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A221C929596DB900E1344E /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C569D7DB295E915B00AC104E /* WeatherIconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIconsView.swift; sourceTree = "<group>"; };
 		C5A221C229596DB700E1344E /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A221C529596DB700E1344E /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		C5A221C729596DB700E1344E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				C5A221D629596F7300E1344E /* HomeView.swift */,
 				C5A221E2295A93FD00E1344E /* LoadingView.swift */,
+				C569D7DB295E915B00AC104E /* WeatherIconsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C569D7DC295E915B00AC104E /* WeatherIconsView.swift in Sources */,
 				C5A221D729596F7300E1344E /* HomeView.swift in Sources */,
 				C5A221DA2959763A00E1344E /* Theme.swift in Sources */,
 				C5A221E5295AA20100E1344E /* ModelData.swift in Sources */,
